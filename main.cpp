@@ -13,7 +13,6 @@ int main()
   double val1, val2;
   cout << "Enter an operation of the following +,-,*,/,plus,minus,mul,div followed by two floating-point values separated by a space: \n";
 
-
   while(cin >> operation >> val1 >> val2) {
 
     double res;
@@ -24,7 +23,7 @@ int main()
       res = val1 - val2;
     else if(operation == "mul"  || operation == "*")  
       res = val1 * val2;
-    else if(operation == "div"  || operation=="/") {
+    else if(operation == "div"  || operation == "/") {
       if(val2 == 0) {
 
         cout << "Can't divide by zero";
